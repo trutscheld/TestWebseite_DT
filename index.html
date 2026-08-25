@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lebenslauf – Vorname Nachname</title>
+  <style>
+    :root {
+      --bg: #f7f7f5;
+      --surface: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #d1d5db;
+      --accent: #0f766e;
+      --maxw: 960px;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .cv {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 160px 1fr;
+      gap: 24px;
+      padding: 32px;
+      border-bottom: 1px solid var(--line);
+      background: #fcfcfb;
+    }
+
+    .photo {
+      width: 160px;
+      height: 160px;
+      border: 2px dashed var(--line);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+      background: #fafafa;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 36px;
+      line-height: 1.1;
+    }
+
+    .subtitle {
+      margin: 0 0 16px;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .summary {
+      margin: 0;
+      color: var(--muted);
+      max-width: 65ch;
+    }
+
+    .main {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+    }
+
+    aside, main {
+      padding: 28px 32px;
+    }
+
+    aside {
+      border-right: 1px solid var(--line);
+      background: #fbfbfb;
+    }
+
+    section + section {
+      margin-top: 28px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 0 0 4px;
+      font-size: 18px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+      padding: 0;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .contact p,
+    .skills p,
+    .languages p {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: 800px) {
+      .hero,
+      .main {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .photo {
+        width: 120px;
+        height: 120px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="cv">
+
+      <header class="hero">
+        <div class="photo">
+          Bild<br>Platzhalter
+        </div>
+
+        <div>
+          <h1>Vorname Nachname</h1>
+          <p class="subtitle">Berufsbezeichnung / Position</p>
+          <p class="summary">
+            Kurze Profilbeschreibung: Hier kann später eine prägnante Zusammenfassung
+            der beruflichen Erfahrung, fachlichen Schwerpunkte und persönlichen Stärken stehen.
+          </p>
+        </div>
+      </header>
+
+      <div class="main">
+        <aside>
+          <section class="contact">
+            <h2>Kontakt</h2>
+            <p>E-Mail: name@beispiel.ch</p>
+            <p>Telefon: +41 XX XXX XX XX</p>
+            <p>Ort: Basel, Schweiz</p>
+            <p>LinkedIn: linkedin.com/in/deinprofil</p>
+            <p>GitHub: github.com/deinname</p>
+          </section>
+
+          <section class="skills">
+            <h2>Skills</h2>
+            <p>Skill 1</p>
+            <p>Skill 2</p>
+            <p>Skill 3</p>
+            <p>Skill 4</p>
+            <p>Skill 5</p>
+          </section>
+
+          <section class="languages">
+            <h2>Sprachen</h2>
+            <p>Deutsch – Niveau</p>
+            <p>Englisch – Niveau</p>
+            <p>Französisch – Niveau</p>
+          </section>
+
+          <section>
+            <h2>Zertifikate</h2>
+            <p>Zertifikat / Weiterbildung 1</p>
+            <p>Zertifikat / Weiterbildung 2</p>
+          </section>
+        </aside>
+
+        <main>
+          <section>
+            <h2>Berufserfahrung</h2>
+
+            <div class="item">
+              <h3>Position / Rolle</h3>
+              <div class="meta">Institution / Unternehmen · Jahr – Jahr</div>
+              <p>Kurzbeschreibung der Tätigkeit oder Verantwortung.</p>
+              <ul>
+                <li>Aufgabe oder Erfolg 1</li>
+                <li>Aufgabe oder Erfolg 2</li>
+                <li>Aufgabe oder Erfolg 3</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <h3>Position / Rolle</h3>
+              <div class="meta">Institution / Unternehmen · Jahr – Jahr</div>
+              <p>Kurzbeschreibung der Tätigkeit oder Verantwortung.</p>
+              <ul>
+                <li>Aufgabe oder Erfolg 1</li>
+                <li>Aufgabe oder Erfolg 2</li>
+              </ul>
+            </div>
+          </section>
+
+          <section>
+            <h2>Ausbildung</h2>
+
+            <div class="item">
+              <h3>Abschluss / Studium</h3>
+              <div class="meta">Hochschule / Institution · Jahr – Jahr</div>
+              <p>Optionaler kurzer Beschreibungstext.</p>
+            </div>
+
+            <div class="item">
+              <h3>Weiterer Abschluss</h3>
+              <div class="meta">Hochschule / Institution · Jahr – Jahr</div>
+              <p>Optionaler kurzer Beschreibungstext.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Projekte</h2>
+
+            <div class="item">
+              <h3>Projektname</h3>
+              <div class="meta">Rolle / Kontext · Jahr</div>
+              <p>Kurzbeschreibung des Projekts, der Methode oder des Ergebnisses.</p>
+            </div>
+
+            <div class="item">
+              <h3>Projektname</h3>
+              <div class="meta">Rolle / Kontext · Jahr</div>
+              <p>Kurzbeschreibung des Projekts, der Methode oder des Ergebnisses.</p>
+            </div>
+          </section>
+
+          <section>
+            <h2>Publikationen</h2>
+            <div class="item">
+              <p>Autor(en), Titel, Journal / Verlag, Jahr.</p>
+            </div>
+            <div class="item">
+              <p>Autor(en), Titel, Journal / Verlag, Jahr.</p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
