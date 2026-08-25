@@ -5,7 +5,8 @@
 
 :root {
   /* Hintergrund der gesamten Seite */
-  --bg: #f4f4f1;
+  --bg: 	#FFD700; /*gold*/
+     /* #f4f4f1;*/
 
   /* Hauptfläche des Lebenslaufs */
   --surface: #ffffff;
